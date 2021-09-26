@@ -24,7 +24,7 @@ class circle{
         return (2*3.14*this.radius).toFixed(2);
     }
     tostring(){
-        
+        return (JSON.stringify({radius:this.radius,color:this.color}));
     }
     
 }
@@ -40,8 +40,6 @@ console.log(cir3.radius,cir3.color);
 console.log(cir3.getcolor());
 console.log(cir3.getarea());
 console.log(cir3.getcircumference());
-
-var myJSON = JSON.stringify(cir3);
-console.log(myJSON);
+console.log(cir3.tostring());
 
 
